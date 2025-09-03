@@ -85,12 +85,14 @@
     .floating-contact{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:8px;z-index:30}
     .floating-contact a{box-shadow:0 10px 30px rgba(34,197,94,.25)}
     .brand-name {
-  font-size: clamp(20px, 6vw, 36px); /* 画面幅で可変 */
+  font-size: clamp(20px, 5vw, 40px); /* スマホで小さめ、自動調整 */
   font-weight: 900;
   color: var(--accent);
   letter-spacing: 2px;
   text-shadow: 0 2px 6px rgba(0,0,0,0.5);
-  margin-left: 12px;  /* 左の見出しと少し間隔 */
+  white-space: normal; /* ← これで改行を許可 */
+  line-height: 1.1;
+  text-align: center; /* センター寄せ */
 }
   </style>
   <script type="application/ld+json">
@@ -115,10 +117,10 @@
   <header>
     <div class="nav">
   <div class="brand">
-  <h1 aria-label="サイト名">神栖・鹿島・潮来 不用品回収</h1>
+  <h1 aria-label="サイト名">神栖・鹿島・潮来 不用品回収センター</h1>
 </div>
 
-<div class="brand-name">KER回収便</div>
+<div class="brand-name">KER<br>回収便</div>
 
 
 </div>
