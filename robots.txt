@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ker-kaishubin.netlify.app/sitemap.xml
