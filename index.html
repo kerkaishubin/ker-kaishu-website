@@ -85,15 +85,12 @@
     .floating-contact{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:8px;z-index:30}
     .floating-contact a{box-shadow:0 10px 30px rgba(34,197,94,.25)}
     .brand-name {
-position: absolute;
-  left: 50%;
-  top: 50%;               /* 親(.nav)の高さの50%位置に置く */
-  transform: translate(-50%, -50%); /* 中央揃え */
-  font-size: 50px;        /* さらに大きく */
+  font-size: clamp(20px, 6vw, 36px); /* 画面幅で可変 */
   font-weight: 900;
-  color: var(--accent);   /* 緑 */
-  letter-spacing: 4px;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  margin-left: 12px;  /* 左の見出しと少し間隔 */
 }
   </style>
   <script type="application/ld+json">
