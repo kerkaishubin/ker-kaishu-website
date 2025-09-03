@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>有料回収の詳細｜KER回収便</title>
+  <meta name="description" content="KER回収便の有料回収品目を詳しくご案内。ブラウン管テレビ・冷蔵庫・洗濯機・ソファーなど処理費が発生する例をまとめています。" />
+  <style>
+    :root{--bg:#0f172a;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--accent:#22c55e;--border:#1f2937}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;line-height:1.6}
+    a{color:#60a5fa;text-decoration:none}a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    header{border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(15,23,42,.9);backdrop-filter:blur(8px);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
+    .brand h1{font-size:18px;margin:0}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:#0b1220;color:var(--text);font-weight:600}
+    .btn.primary{background:var(--accent);color:#052e16;border-color:#16a34a}
+    .section{padding:28px 0}
+    .grid{display:grid;gap:18px}
+    .grid.cols-2{grid-template-columns:1fr}
+    @media(min-width:880px){.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+    .card h3{font-size:22px;font-weight:900;margin:0 0 10px;border-bottom:3px solid var(--accent);padding-bottom:6px}
+    .list{padding-left:18px;margin:0}
+    .list.two-col{column-count:2;column-gap:24px}
+    .list.two-col li{break-inside:avoid}
+    footer{border-top:1px solid var(--border);padding:24px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand"><h1>有料回収の詳細</h1></div>
+      <div class="cta">
+        <a class="btn" href="index.html">← トップへ戻る</a>
+        <a class="btn primary" href="tel:08010567647">今すぐ電話</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>有料回収の例</h2>
+      <div class="grid cols-2">
+
+        <div class="card">
+          <h3>大型家具・木製品</h3>
+          <ul class="list two-col">
+            <li>ソファ（破れ・汚れが大きいもの）</li>
+            <li>ベッド・マットレス</li>
+            <li>タンス・食器棚</li>
+            <li>学習机・本棚</li>
+            <li>カーペット・ラグ</li>
+            <li>座椅子・座布団</li>
+            <li>木製家具全般</li>
+            <li>こたつ</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>ガラス・陶器・不燃ごみ系</h3>
+          <ul class="list two-col">
+            <li>食器（陶器・ガラス）</li>
+            <li>花瓶・鏡・額縁のガラス</li>
+            <li>耐熱ガラス調理器具</li>
+            <li>植木鉢（陶器）</li>
+            <li>瓦・タイル小片</li>
+            <li>蛍光管（割れ・混在）</li>
+            <li>プラスチック製品全般</li>
+            <li>傘</li>
+            <li>布類</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>家電リサイクル対象品など</h3>
+          <ul class="list two-col">
+            <li>ブラウン管テレビ</li>
+            <li>一部の液晶テレビ</li>
+            <li>洗濯機</li>
+            <li>洗濯乾燥機（年式・状態による）</li>
+            <li>冷蔵庫（年式・状態による）</li>
+            <li>乾燥機</li>
+            <li>マッサージチェア</li>
+            <li>餅つき機</li>
+            <li>大型家電全般</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>処理費が発生しやすいもの</h3>
+          <ul class="list two-col">
+            <li>濡れた布団・羽毛布団</li>
+            <li>スプリング入りマットレス</li>
+            <li>分別困難な混在ごみ</li>
+            <li>プラスチック製大型容器</li>
+            <li>石・土・レンガ類（少量）</li>
+            <li>観葉植物・土付き鉢</li>
+            <li>ゴム製品</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> KER回収便</div>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
